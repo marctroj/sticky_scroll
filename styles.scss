@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Meno";
+    src: url('./Meno\ Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    padding: 0 25px;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+.right-side {
+    flex: 1;
+}
+
+.left-side {
+    flex: 1;
+    position: sticky;
+    top: 0;
+    height: 100%;
+
+    @media screen and (max-width: 767px) {
+        position: relative;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-size: 11vw;
+        font-family: "Meno";
+        letter-spacing: -4px;
+    }
+
+    p {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+}
+
+.banner {
+    margin: 50px 0;
+    img {
+        width: 100%;
+    }
+}
+
+footer {
+    border-top: 2px solid black;
+    padding: 25px;
+    text-align: center;
+}
